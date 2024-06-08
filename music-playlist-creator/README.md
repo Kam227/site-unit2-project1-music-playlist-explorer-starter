@@ -29,8 +29,8 @@ Deployed Application (optional): [Music Playlist Explorer Deployed Site](ADD_LIN
 
 #### STRETCH FEATURES
 
-- [] **Add New Playlists**
-  - [] Allow users to create new playlists.
+- [ ] **Add New Playlists**
+  - [ ] Allow users to create new playlists.
   - [ ] Users can input playlist name, creator, and add multiple songs with details like title, artist, and duration.
 
 - [x] **Edit Existing Playlists**
