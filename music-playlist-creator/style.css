@@ -4,3 +4,298 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
+
+.header {
+    display: flex;
+    border: 1px solid black;
+    font-size: 20px;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-redirect {
+   margin-right: 20px;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 20px;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.playlist-rows {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: center;
+}
+
+.playlist-cards {
+   visibility: visible;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    width: 200px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: none;
+    background-color: white;
+    transition: transform 0.2s;
+}
+
+.playlist-bottom-section {
+   display: flex;
+   align-items: center;
+}
+
+.like {
+    display: flex;
+    width: 100%;
+    padding-right: 5%;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.playlist-delete {
+   margin-bottom: 20px;
+}
+
+.playlist-img {
+    width: 100%;
+}
+
+.heart-img {
+    width: 20px;
+    height: 50%;
+    padding-right: 7px;
+}
+
+/* CSS for Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 30px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-height: 80%;
+    overflow-y: auto; /* Note to self: Enables vertical scroll */
+ }
+ .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+ }
+ .close:hover,
+ .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
+/* CSS for Modal */
+
+/* CSS for Name Change Modal */
+
+.name-change {
+   display: none;
+   position: fixed;
+   z-index: 10;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 300px;
+   padding: 20px;
+   background-color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.name-change-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.name-change-content p {
+   margin-bottom: 10px;
+}
+
+.name-change-content input {
+   width: 100%;
+   padding: 5px;
+   margin-bottom: 10px;
+}
+
+.name-change-content button {
+   padding: 5px 10px;
+}
+
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/* CSS for Name Change Modal */
+
+ .header-modal {
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+ }
+
+ .playlist-img-modal {
+    width: 150px;
+ }
+
+ .playlist-img-song {
+    width: 90px;
+ }
+
+ .modal-songs {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    max-height: 50vh;
+    overflow-y: auto;
+ }
+
+ .modal-song-container {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+ }
+
+ .header-modal-content {
+    padding-left: 30px;
+ }
+
+ .modal-song-content {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    justify-content: space-between;
+ }
+
+ .modal-song-duration {
+   margin-left: 15px;
+ }
+
+ .playlist-shuffle {
+   padding: 10px;
+   border: 1px solid black;
+   border-radius: 5px;
+   font-weight: bold;
+ }
+
+ .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.featured-page {
+   display: flex;
+   justify-content: space-between;
+}
+
+.featured-playlist-left {
+   width: 60%;
+   order: 2;
+}
+
+.featured-playlist {
+   width: 35%;
+   text-align: center;
+   order: 1;
+}
+
+.featured-playlist-img {
+   width: 100%;
+   border: 1px solid black;
+}
+
+.featured-song-section {
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border: 1px solid black;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featured-song-img {
+   width: 20%;
+   padding: 10px;
+   margin-right: 20px;
+}
+
+.playlist-delete {
+   visibility: visible;
+}
+
+ /* TEXT STYLING */
+
+ .playlist-title-main {
+    font-size: 20px;
+ }
+
+ .playlist-title-modal {
+    font-size: 25px;
+ }
+
+ .creator-name-main {
+    margin-top: -15px;
+ }
+
+ .creator-name-modal {
+    margin-top: -15px;
+ }
+
+ .song-title {
+    font-size: 20px;
+ }
+
+.artist-name {
+    margin-top: -20px;
+}
+
+.album-name {
+    margin-top: -15px;
+}
