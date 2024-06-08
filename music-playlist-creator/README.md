@@ -52,7 +52,7 @@ Deployed Application (optional): [Music Playlist Explorer Deployed Site](ADD_LIN
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video actually renders and is playable when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
 
-`ADD_EMBEDDED_CODE_HERE`
+`[ADD_EMBEDDED_CODE_HERE](https://drive.google.com/file/d/1Dn69Y1KSKanyV7gcjdm4yaFZeWtVtqkU/view?usp=sharing)`
 
 ### Reflection
 
