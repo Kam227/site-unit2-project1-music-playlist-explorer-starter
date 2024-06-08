@@ -71,7 +71,7 @@ My final project demo went well, I just wish I could've implemented more of the 
 ### Open-source libraries used
 
 - Add any links to open-source libraries used in your project.
-No 
+N/A
 
 ### Shout out
 
