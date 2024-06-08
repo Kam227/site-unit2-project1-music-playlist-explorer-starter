@@ -3,22 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <!-- Your header content here -->
+    <header class="header">
+       <h3 class="header-title">Music Playlist Explorer</h3>
+       <a href="http://127.0.0.1:5500/site-unit2-project1-music-playlist-explorer-starter/music-playlist-creator/featured.html"><button class="header-redirect">Featured Page</button></a>
     </header>
 
-    <main> 
-        <!-- Your main content here -->
+    <!-- Playlist Songs Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+        <span id="close" class="close">&times;</span>
+        <div class="header-modal">
+            <img id="playlist-img-modal" class="playlist-img-modal" src="./assets/img/playlist.png">
+            <div class="header-modal-content">
+                <p id="playlist-title-modal" class="playlist-title-modal">Playlist Title</p>
+                <p id="creator-name-modal" class="creator-name-modal">Creator Name</p>
+                <button id="playlist-shuffle" class="playlist-shuffle">Shuffle</button>
+            </div>
+        </div>
+
+        <div id="modal-songs" class="modal-songs">
+            <div class="modal-song-container">
+                <img class="playlist-img-song" src="./assets/img/song.png" />
+                <div class="modal-song-content">
+                    <div>
+                        <p class="song-title">Song Title</p>
+                        <p class="artist-name">Artist Name</p>
+                        <p class="album-name">Album Name</p>
+                    </div>
+                    <div>
+                        <p>0:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Name Change Modal Structure -->
+    <div id="name-change" class="name-change">
+        <div class="name-change-content">
+            <span id="close-name-change" class="close">&times;</span>
+            <p>Change Playlist Name:</p>
+            <input id="new-playlist-name" type="text" />
+            <button id="submit-name-change">Change Name</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="playlist-rows">
+        </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <!-- Your footer content here -->
     </footer>
     <script src="data/data.js"></script>
